@@ -1,4 +1,4 @@
-import { sum } from '../example'
+import { sum } from '../example1'
 
 describe('additon', () => {
     test('test two postive number',  () => {
