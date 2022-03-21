@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "test:watch": "node --expose-gc --max-old-space-size=4096 ./node_modules/.bin/jest --runInBand --logHeapUsage --forceExit --watch --notify",
+    "test:coverage": "jest --coverage --forceExit --detectOpenHandles --collectCoverage=true"
+  },
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "isolatedModules": true
+      }
+    },
+    "maxConcurrency": 1,
+    "logHeapUsage": true,
+    "preset": "ts-jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.1"
+  },
+  "dependencies": {
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.3",
+    "typescript": "^4.6.2"
+  }
+}
