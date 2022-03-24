@@ -1,4 +1,4 @@
-import { multiply } from '../../src/exampleinFolder'
+import { multiply } from '../../folder/exampleinFolder'
 
 describe('multiply', () => {
     test('test two postive number',  () => {
